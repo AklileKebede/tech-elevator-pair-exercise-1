@@ -22,21 +22,17 @@ namespace PetElevator.CRM
 
         public string ListVaccinations()
         {
-            //The ListVaccinations method returns the elements of Vaccinations as a comma - delimited string.For example, if the List contains["Rabies", "Distemper", "Parvo"], the output must be "Rabies, Distemper, Parvo".
+            //The ListVaccinations method returns the elements of Vaccinations as a comma - delimited string.
+            //For example, if the List contains["Rabies", "Distemper", "Parvo"], the output must be "Rabies, Distemper, Parvo".
            
-            if (Vaccinations.Count > 0)
+            if (Vaccinations.Count == 0)
             {
                 return "No Vaccinations Found";
             }
 
-            foreach (string vaccine in Vaccinations)
-            {
-               return string.Join(", ", vaccine);
-               
-            }
-            return " ";
-           
-            /// TODO check method return value write test for method  
+            return string.Join(", ", Vaccinations);
+          
+            
 
 
         }
