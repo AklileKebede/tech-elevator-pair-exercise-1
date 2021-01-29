@@ -3,7 +3,7 @@ using PetElevator.Shared;
 
 namespace PetElevator.HR
 {
-    public class Employee : Person
+    public class Employee : Person, IBillable
     {
         public int EmployeeId { get; private set; }
         public string Title { get; set; }
@@ -36,5 +36,27 @@ namespace PetElevator.HR
             }
         }
 
+        public double GetBalanceDue(Dictionary<string, double> invoice)
+        {
+            double sum = 0.00;
+            double discount = 0.50;
+
+            foreach (KeyValuePair<string, double> charge in invoice)
+            {   if (charge.Key == "Walking")
+                {
+                    sum += charge.Value * discount;
+                }
+                else sum += charge.Value;
+
+            }
+
+            return sum;
+
+        }
+
+
     }
+
+
+
 }

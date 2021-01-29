@@ -5,7 +5,7 @@ using System.Text;
 
 namespace PetElevator.CRM
 {
-    public class Customer : Person
+    public class Customer : Person, IBillable
     {
         public string PhoneNumber { get; set; }
         public List<Pet> Pets { get; set; }
@@ -20,6 +20,24 @@ namespace PetElevator.CRM
         {
             this.PhoneNumber = "";
             this.Pets= new List<Pet>();
+        }
+
+        public double GetBalanceDue(Dictionary<string, double> invoice)
+        {
+            double sum = 0.00;
+
+            foreach (KeyValuePair<string, double> charge in invoice)
+            {
+                sum =+ charge.Value;
+
+            }
+            
+            
+            
+            return sum;
+
+
+
         }
     }
 }
