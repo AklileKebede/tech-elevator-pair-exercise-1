@@ -4,6 +4,8 @@ namespace PetElevator.HR
 {
     public class Department
     {
+        private int field;
+
         public int DepartmentId { get; private set; }
         public string DepartmentName { get; private set; }
         public Manager DepartmentHead { get; private set; }

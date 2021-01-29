@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PetElevator.HR.Department" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACgAAAAAAAAgAAAAgQAAAAAAAAAAAAAAQAACAIAAAA=</HashCode>
+      <FileName>HR\Department.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetElevator.HR.Employee" Collapsed="true">
+    <Position X="4.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAMAAIAAAAAAAEAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>HR\Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetElevator.HR.Manager" Collapsed="true">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HR\Manager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetElevator.Shared.Person" Collapsed="true">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Shared\Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="PetElevator.Shared.IBillable" Collapsed="true">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Shared\IBillable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
