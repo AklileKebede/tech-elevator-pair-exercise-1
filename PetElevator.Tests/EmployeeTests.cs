@@ -40,6 +40,30 @@ namespace PetElevator.Tests
         }
 
 
+        [DataTestMethod]
+        [DataRow(new double[] { 25.00, 15.00, 10.25 }, new string[] { "Walking", "vac2", "vac3" }, 37.75)]
+        [DataRow(new double[] { 12.00, 12.00, 12.00 }, new string[] { "vac", "vac1", "vac2" }, 36.00)]
+        [DataRow(new double[] { 12.00, 12.00, 12.00 }, new string[] { "Walking", "Walking", "Walking" }, 18)]
 
+        // [DataRow(new double[] { 10.00, 59.00, 11.35 }, 80.35)]
+
+
+        public void GetBalanceDueEmployee_Test(double[] chargesArray, string[] serviceArray, double expectedBalance)
+        {
+            //arrange
+            Employee employeeCustomer = new Employee("Aklile", "K");
+            Dictionary<string, double> dictionaryInvoices = new Dictionary<string, double>();
+
+            for (int i = 0; i < chargesArray.Length; i++)
+            {
+                dictionaryInvoices.Add(serviceArray[i], chargesArray[i]);
+            }
+            //act
+            double actualBlance = employeeCustomer.GetBalanceDue(dictionaryInvoices);
+
+            //assert
+            Assert.AreEqual(expectedBalance, actualBlance);
+
+        }
     }
 }
