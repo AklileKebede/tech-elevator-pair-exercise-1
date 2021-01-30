@@ -28,7 +28,7 @@ namespace PetElevator.CRM
 
             foreach (KeyValuePair<string, double> charge in invoice)
             {
-                sum =+ charge.Value;
+                sum += charge.Value;
 
             }
             
